@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Container da calculadora */
+.container {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* Estilizando a tabela */
+.calculadora {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+/* Estilizando o display */
+.display {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efeito quando clica no display */
+.display:focus {
+  transform: scale(1.02);
+}
+
+/* Estilo dos botões */
+button {
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de hover */
+button:hover {
+  background: #666;
+  transform: scale(1.1);
+}
+
+/* Efeito de clique */
+button:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Botão de limpar */
+.btn-clear {
+  background: #e74c3c;
+}
+
+.btn-clear:hover {
+  background: #c0392b;
+}
+
+/* Botão de igual */
+.btn-eq {
+  background: #2ecc71;
+}
+
+.btn-eq:hover {
+  background: #27ae60;
+}
+
+/* Botão de deletar */
+.btn-del {
+  background: #f39c12;
+}
+
+.btn-del:hover {
+  background: #e67e22;
+}
